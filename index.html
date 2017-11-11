@@ -1,58 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MoreClean</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bulma/css/bulma.css">
-  </head>
-  <body>
-      <header>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                      <a class="navbar-item" href="https://bulma.io">
-                        <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
-                      </a>                  
-                      <button class="button navbar-burger" data-target="navMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                    </div>
-                    <div class="navbar-menu" id="navMenu">
-                        <!-- navbar start, navbar end -->
-                        <a class="navbar-item">Home</a>
-                        <a class="navbar-item">La Empresa</a>                        
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
-                                Productos
-                            </a>                            
-                            <div class="navbar-dropdown">
-                                <!-- Other navbar items -->
-                                <a class="navbar-item">
-                                    Liquidos Industriales
-                                </a>
-                                <hr class="navbar-divider">
-                                <div class="navbar-item">
-                                    mas
-                                </div>
-                            </div>
-                        </div> 
-                        <a class="navbar-item">Contacto</a>     
-                    </div>
-                  </nav>
-      </header>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoreClean</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+  <link rel="stylesheet" href="bulma/css/myStyle.css">
+  
+</head>
+<body>
+  <header>
+      <nav class="navbar container" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="img/logo.png" alt="More Clean Distribuidora de pruductos y maquinaria de limpieza">              
+            </a>                  
+            <div class="navbar-item is-size-1 has-text-info">More Clean</div>
+            <button class="button navbar-burger" data-target="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="navbar-menu level-right" id="navMenu">
+              <!-- navbar start, navbar end -->
+              <a class="navbar-item">Home</a>
+              <a class="navbar-item">La Empresa</a>                        
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                      Productos
+                  </a>                            
+                  <div class="navbar-dropdown">
+                      <!-- Other navbar items -->
+                      <a class="navbar-item">
+                          Muchos productos
+                      </a>
+                      <hr class="navbar-divider">
+                      <div class="navbar-item">
+                          mas
+                      </div>
+                  </div>
+              </div> 
+              <a class="navbar-item">Contacto</a>     
+          </div>
+        </nav>
+  </header>
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container contSlider">
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="img/logos/logo-seiq300x150.png">
+          <img class="mySlides" src="img/logos/logo-royco300x150.png">
+          <img class="mySlides" src="img/logos/italimpia300x150.png">
+          <img class="mySlides" src="img/logos/turbion300x150.png">
+          <div class="w3-center w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+            <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="content">
+          <div class="is-divider" data-content="Nosotros"></div>          
+        <p>
+          Somos distribuidores de insumos para limpieza e higiene integral. Tenemos una experiencia de más de <strong>12 años</strong> en este rubro que nos hace una empresa sólida y confiable.
+          </p>
+          <p>
+             Operamos dentro de Buenos Aires con nuestros propios vehículos, y tenemos una logística que llega a todo el país, colocando a nuestra empresa en la distribuidora más confiable y efectiva.
+        </p>
+        <p>          
+          Nuestra diferencia es la atencion que brindamos a nuestros cllientes y el asesoramiento continuo con, esto y la variada cantidad de productos que tenemos disponibles, hace que sea una empresa que satisface las necesidades de cada cliente en particular.
+        </p>        
+      </div>  
+    </div>  
+    <div class="container">
+        <div class="is-divider" data-content="ALGUNAS DE LAS MARCAS QUE VENDEMOS"></div>
+        <!--<div class="is-size-3 has-text-centered title">ALGUNAS DE LAS MARCAS QUE VENDEMOS</div>-->
+      <div class="columns">      
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by1">
+                    <img src="img/logos/logo_seiq.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">                       
+                  <div class="content">
+                    Te ofrecemos la mas amplia gama de productos de la industria y lo invitamos a usted a que conozca con precision los multiples usos y aplicaciones que tienen para las diferentes areas de los productos SEIQ
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by1">
+                    <img src="img/logos/logo_royco.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">                      
+                  <div class="content">
+                    Barredores domésticos, 
+                    Barredores profesionales,
+                    Mopas y Mopines,
+                    Carros y Baldes,
+                    Secavidrios y Lavavidrios,
+                    Cabos y Extensores,
+                    Rascadores,
+                    Secadores de Piso,
+                    Cepillos Industriales,
+                    Rieles y Ménsulas,
+                  </div>
+                </div>
+              </div>
+      </div>
+      <div class="column">
+          <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="img/logos/italimpia.png " alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">      
+                <div class="content">
+                  <br>
+                  Te acercamos los variados productos de ITALIMPA, haciendo mas facil el trabajo. <br>
+                  Mopas, baldes con escurridores, carros de limpieza, cepillos industriales, etc
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="column">
+          <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="img/logos/logo_turbion.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">     
+                <div class="content">
+                  Máquinas e insumos para limpieza e higiene 
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--SECCION ENVIOS-->
+  <section class="section">
+      <div class="is-divider" data-content="Entrega a domicilio en Buenos Aires y logistica a todo el pais"></div>  
+    <h1>ENVIOS</h1>
+  </section>
+
+<!--SECCION CONTACTO-->
+  <section class="section">
+    <h1>CONTACTO</h1>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
