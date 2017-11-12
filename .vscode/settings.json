@@ -10,5 +10,6 @@
             "savePath": "bulma/css/"
         }
     ],
-    "easysass.targetDir": "bulma/sass/css"
+    "easysass.targetDir": "bulma/sass/css",
+    "cSpell.language": "es,es-ES"
 }

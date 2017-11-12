@@ -1,13 +1,45 @@
+.parallax
+    /*the image used*/
+    //background-image: url('http://www.dimolgroup.com.ar/uploads/trabajos/large/61ca76283e0a2cff72201d09edb1de1c7347ac44.jpg')
+    
+    /*Set a specific height */
+    min-height: 100%
+    /*Create the parallax scrolling effect */
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.pSlides 
+    /*the image used */
+    background-image: url('http://www.dimolgroup.com.ar/uploads/trabajos/large/61ca76283e0a2cff72201d09edb1de1c7347ac44.jpg')
+  
+.pEnvios 
+    /*the image used */
+    background-image: url('../../img/assets/fondoCamion.jpg')
+    //height: 100px
+
+.pContacto 
+    /*the image used */
+    background-image: url('https://d164vpkda9uyv1.cloudfront.net/web_upload/consumer/page_banner/contact_SP.jpg')
+    height: 100px   
+   
+.boxTitleSecction
+    //margin:  25px 0 
+    color: white
+    background-color: rgba(150, 168, 179, 0.49)
+    text-align: center
+    padding: 23px 0
 
 .contSlider
-    background: #353535
-    padding: 36px 1px
+    //background: #353535
+    //padding: 5% 0px
     border-radius: 10px
 
 .mySlides 
     display:none
     margin:auto !important
-    max-height: 180px
+    //max-height: 180px
     min-height: 100%px
 
 .w3-content 
@@ -19,17 +51,20 @@
 
 .w3-tooltip, .w3-display-container 
     position: relative
+    //padding: 55px 0
+    //background-color: rgba(209,209,209,0.49)
 
 .w3-display-bottommiddle 
     position: absolute
     left: 50%
-    /*bottom: 0*/
+    bottom: -150px
     transform: translate(-50%,0%)
     -ms-transform: translate(-50%,0%)
 
 
 .w3-left, .w3-right, .w3-badge 
     cursor:pointer !important
+    color: black
 
 .w3-center 
     text-align: center!important
@@ -59,6 +94,46 @@
 
 .w3-right 
     float: right!important
+    height: 100px
 
 .w3-left 
     float: left!important
+
+.bd-special-shadow 
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(transparent)); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), transparent)
+    height: 8px
+    left: 0
+    opacity: 0
+    position: absolute
+    right: 0
+    top: 100%
+    -webkit-transform: scaleY(0)
+    transform: scaleY(0)
+    -webkit-transform-origin: center top
+    transform-origin: center top
+
+html.has-navbar-fixed-top
+  padding-top: 7.50rem
+
+
+.navbar.is-fixed-top 
+    left: 0
+    position: fixed
+    right: 0
+    z-index: 30
+    top: 0px
+    transition: transform 0.7s
+    //transform: translateY(0px)
+
+.is-center
+    text-align: center
+
+.figEnvios
+    margin: auto
+
+.contentEnvios
+    text-transform: uppercase
+    color: white
+    background-color: rgba(255, 0, 0, 0.19)
+    border-radius: 5px

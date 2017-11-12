@@ -6440,6 +6440,9 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-menu.is-active {
     display: block;
   }
+  .navbar-burger {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1024px) {

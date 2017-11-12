@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" class="has-navbar-fixed-top">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,21 +13,22 @@
 </head>
 <body>
   <header>
-      <nav class="navbar container" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div id="specialShadow" class="bd-special-shadow" style="opacity: 1; transform: scaleY(1);"></div>
+        <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-              <img src="img/logo.png" alt="More Clean Distribuidora de pruductos y maquinaria de limpieza">              
+              <img src="img/logo.png" alt="More Clean Distribuidora de pruductos y maquinaria de limpieza">             
             </a>                  
-            <div class="navbar-item is-size-1 has-text-info">More Clean</div>
-            <button class="button navbar-burger" data-target="navMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+            <div class="navbar-item is-size-3 has-text-info">More Clean</div>
+              <button class="button navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
           </div>
           <div class="navbar-menu level-right" id="navMenu">
               <!-- navbar start, navbar end -->
-              <a class="navbar-item">Home</a>
+              <a href="index.html" class="navbar-item">Home</a>
               <a class="navbar-item">La Empresa</a>                        
               <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
@@ -46,17 +47,17 @@
               </div> 
               <a class="navbar-item">Contacto</a>     
           </div>
-        </nav>
-  </header>
+        </nav>  
 
-  <section class="hero is-primary">
+  <section class="hero is-primary parallax pSlides">
     <div class="hero-body">
       <div class="container contSlider">
         <div class="w3-content w3-display-container">
-          <img class="mySlides" src="img/logos/logo-seiq300x150.png">
-          <img class="mySlides" src="img/logos/logo-royco300x150.png">
-          <img class="mySlides" src="img/logos/italimpia300x150.png">
-          <img class="mySlides" src="img/logos/turbion300x150.png">
+            <img class="mySlides" src="img/slide-marcas.png">            
+            <img class="mySlides" src="img/slide-1.png">            
+          <img class="mySlides" src="img/slide-royco.png">
+          <img class="mySlides" src="img/slide-marcas.png">
+          <img class="mySlides" src="img/slide-envio.png">
           <div class="w3-center w3-display-bottommiddle" style="width:100%">
             <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
@@ -64,6 +65,7 @@
             <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
             <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
             <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
+            <span class="w3-badge demo w3-border" onclick="currentDiv(5)"></span>
           </div>
         </div>
       </div>
@@ -81,7 +83,7 @@
              Operamos dentro de Buenos Aires con nuestros propios vehículos, y tenemos una logística que llega a todo el país, colocando a nuestra empresa en la distribuidora más confiable y efectiva.
         </p>
         <p>          
-          Nuestra diferencia es la atencion que brindamos a nuestros cllientes y el asesoramiento continuo con, esto y la variada cantidad de productos que tenemos disponibles, hace que sea una empresa que satisface las necesidades de cada cliente en particular.
+          Nuestra diferencia es la atención que brindamos a nuestros clientes y el asesoramiento continuo con, esto y la variada cantidad de productos que tenemos disponibles, hace que sea una empresa que satisface las necesidades de cada cliente en particular.
         </p>        
       </div>  
     </div>  
@@ -98,7 +100,7 @@
                 </div>
                 <div class="card-content">                       
                   <div class="content">
-                    Te ofrecemos la mas amplia gama de productos de la industria y lo invitamos a usted a que conozca con precision los multiples usos y aplicaciones que tienen para las diferentes areas de los productos SEIQ
+                    Te ofrecemos la mas amplia gama de productos de la industria y lo invitamos a usted a que conozca con precision los múltiples usos y aplicaciones que tienen para las diferentes areas de los productos SEIQ
                   </div>
                 </div>
               </div>
@@ -116,7 +118,7 @@
                     Barredores profesionales,
                     Mopas y Mopines,
                     Carros y Baldes,
-                    Secavidrios y Lavavidrios,
+                    Seca vidrios y Lava vidrios,
                     Cabos y Extensores,
                     Rascadores,
                     Secadores de Piso,
@@ -136,7 +138,7 @@
               <div class="card-content">      
                 <div class="content">
                   <br>
-                  Te acercamos los variados productos de ITALIMPA, haciendo mas facil el trabajo. <br>
+                  Te acercamos los variados productos de ITALIMPA, haciendo mas fácil el trabajo. <br>
                   Mopas, baldes con escurridores, carros de limpieza, cepillos industriales, etc
                 </div>
               </div>
@@ -162,14 +164,49 @@
   
   <!--SECCION ENVIOS-->
   <section class="section">
-      <div class="is-divider" data-content="Entrega a domicilio en Buenos Aires y logistica a todo el pais"></div>  
-    <h1>ENVIOS</h1>
+    <div class="is-divider" data-content="Entrega a domicilio en Buenos Aires y logistica a todo el pais"></div>
+    <div class="parallax pEnvios is-center">
+    <div class="container">
+      <div class="boxTitleSecction title is-2">ENTREGAS</div>  
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-128x128 is-center figEnvios">
+                  <img src="img/assets/reparto-envio-diario.png">
+                </figure>
+                  <div class="content is-center is-size-3 contentEnvios">
+                      Envíos a todo el país 
+                  </div> 
+            </div>
+            <div class="column">
+                <figure class="image is-128x128 is-center figEnvios">
+                    <img src="img/assets/carro.png">
+                  </figure>
+                    <div class="content is-center is-size-3 contentEnvios">
+                        Entrega a domicilio en capital y gran buenos aires
+                    </div> 
+            </div>
+          </div>
+      </div>
+   </div> 
+ 
   </section>
 
 <!--SECCION CONTACTO-->
+<div class="is-divider" data-content="Contactate con nosotros"></div>
+<div class="parallax pContacto is-center">
+    <div class="container">
+      <div class="boxTitleSecction title is-1">PEDÍ TU PRESUPUESTO</div>    
+    </div>
+  </div>
   <section class="section">
-    <h1>CONTACTO</h1>
+    <h1 class="is-size-2">CONTACTO</h1>
   </section>
+
+  <footer>
+    <div class="container">
+      <div class="is-size-2">footer</div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
