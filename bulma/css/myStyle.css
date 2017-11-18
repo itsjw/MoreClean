@@ -1,3 +1,11 @@
+.main {
+  background-color: white;
+}
+
+.section {
+  background-color: whitesmoke;
+}
+
 .parallax {
   /*the image used*/
   /*Set a specific height */

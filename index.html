@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MoreClean</title>
+  <title>MoreClean +</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="bulma/css/bulma.css">
   <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-  <link rel="stylesheet" href="bulma/css/myStyle.css">
-  
+  <link rel="stylesheet" href="bulma/css/myStyle.css">  
+  <link rel="stylesheet" href="slick/slick.css">  
+  <link rel="stylesheet" href="slick/slick-theme.css">  
 </head>
-<body>
+<body >
   <header>
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-fixed-top container" role="navigation" aria-label="main navigation">
           <div id="specialShadow" class="bd-special-shadow" style="opacity: 1; transform: scaleY(1);"></div>
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-              <img src="img/logo.png" alt="More Clean Distribuidora de pruductos y maquinaria de limpieza">             
+              <img src="img/logo2.png" alt="More Clean Distribuidora de productos y maquinaria de limpieza">             
             </a>                  
-            <div class="navbar-item is-size-3 has-text-info">More Clean</div>
+            <div class="navbar-item is-size-3 has-text-info"></div>
               <button class="button navbar-burger" data-target="navMenu">
                 <span></span>
                 <span></span>
@@ -48,25 +49,19 @@
               <a class="navbar-item">Contacto</a>     
           </div>
         </nav>  
-
+  </header>
+  
   <section class="hero is-primary parallax pSlides">
     <div class="hero-body">
-      <div class="container contSlider">
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="img/slide-marcas.png">            
-            <img class="mySlides" src="img/slide-1.png">            
-          <img class="mySlides" src="img/slide-royco.png">
-          <img class="mySlides" src="img/slide-marcas.png">
-          <img class="mySlides" src="img/slide-envio.png">
-          <div class="w3-center w3-display-bottommiddle" style="width:100%">
-            <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-            <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-            <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
-            <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
-            <span class="w3-badge demo w3-border" onclick="currentDiv(5)"></span>
-          </div>
+      <div id="sliderFrame">
+        <div class="slider container">
+            <img class="mySlides" src="img//banner/banner-mc.jpg">            
+            <img class="mySlides" src="img/banner/banner-t.jpg">            
+            <img class="mySlides" src="img/banner/banner-se.jpg">            
+            <img class="mySlides" src="img/banner/banner-ces.jpg">
+            <img class="mySlides" src="img/banner/banner-r.jpg">            
+            <img class="mySlides" src="img/banner/banner-marcas.jpg">
+            <img class="mySlides" src="img/slide-envio.png">
         </div>
       </div>
     </div>
@@ -87,14 +82,14 @@
         </p>        
       </div>  
     </div>  
-    <div class="container">
+    <div class="container ">
         <div class="is-divider" data-content="ALGUNAS DE LAS MARCAS QUE VENDEMOS"></div>
         <!--<div class="is-size-3 has-text-centered title">ALGUNAS DE LAS MARCAS QUE VENDEMOS</div>-->
-      <div class="columns">      
+      <div class="columns ">      
         <div class="column">
             <div class="card">
-                <div class="card-image">
-                  <figure class="image is-2by1">
+                <div class="card-image ">
+                  <figure class="image">
                     <img src="img/logos/logo_seiq.png" alt="Placeholder image">
                   </figure>
                 </div>
@@ -108,22 +103,24 @@
         <div class="column">
             <div class="card">
                 <div class="card-image">
-                  <figure class="image is-2by1">
-                    <img src="img/logos/logo_royco.png" alt="Placeholder image">
+                  <figure class="image">
+                    <img src="img/logos/logo-texto.svg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">                      
                   <div class="content">
-                    Barredores domésticos, 
-                    Barredores profesionales,
-                    Mopas y Mopines,
-                    Carros y Baldes,
-                    Seca vidrios y Lava vidrios,
-                    Cabos y Extensores,
-                    Rascadores,
-                    Secadores de Piso,
-                    Cepillos Industriales,
-                    Rieles y Ménsulas,
+                    <ul>
+                      <li>Barredores domésticos</li>
+                      <li>Barredores profesionales</li>
+                      <li>Mopas y Mopines</li>
+                      <li>Carros y Baldes</li>
+                      <li>Seca vidrios y Lava vidrios</li>
+                      <li>Cabos y Extensores</li>
+                      <li>Rascadores</li>
+                      <li>Secadores de Piso</li>
+                      <li>Cepillos Industriales</li>
+                      <li>Rieles y Ménsulas</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -131,7 +128,7 @@
       <div class="column">
           <div class="card">
               <div class="card-image">
-                <figure class="image is-2by1">
+                <figure class="image">
                   <img src="img/logos/italimpia.png " alt="Placeholder image">
                 </figure>
               </div>
@@ -147,7 +144,7 @@
       <div class="column">
           <div class="card">
               <div class="card-image">
-                <figure class="image is-2by1">
+                <figure class="image ">
                   <img src="img/logos/logo_turbion.jpg" alt="Placeholder image">
                 </figure>
               </div>
@@ -163,11 +160,12 @@
   </section>
   
   <!--SECCION ENVIOS-->
-  <section class="section">
-    <div class="is-divider" data-content="Entrega a domicilio en Buenos Aires y logistica a todo el pais"></div>
-    <div class="parallax pEnvios is-center">
-    <div class="container">
-      <div class="boxTitleSecction title is-2">ENTREGAS</div>  
+  <div class="is-divider" data-content="Entrega a domicilio en Buenos Aires y logistica a todo el pais"></div>
+  <div class="parallax pEnvios is-center">
+    <div class="boxTitleSecction title is-2">ENTREGAS</div>  
+  </div>
+      <section class="section">
+        <div class="container">
           <div class="columns">
             <div class="column">
               <figure class="image is-128x128 is-center figEnvios">
@@ -187,8 +185,7 @@
             </div>
           </div>
       </div>
-   </div> 
- 
+    </div>
   </section>
 
 <!--SECCION CONTACTO-->
@@ -198,16 +195,106 @@
       <div class="boxTitleSecction title is-1">PEDÍ TU PRESUPUESTO</div>    
     </div>
   </div>
+  
   <section class="section">
-    <h1 class="is-size-2">CONTACTO</h1>
+    <div class="container">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">            
+          <div class="vcard">
+            <address class="author">
+              <em class="fn"><a title="Posts by Jack Osborne" href="#">More Clean</a></em> 
+                  <br>
+                  distribuidora
+                <br>
+                <telephone><i class="fa fa-phone" aria-hidden="true"></i> 4567-1598</telephone>
+                <br>
+                <email><i class="fa fa-mail-forward" aria-hidden="true"></i> moreclean@moreclean.com.ar</email>
+                <br>
+              <street>cale altura barrio</street>
+            </address>             
+          </div>
+          <div class="vcard">
+              <p class="fn"><a class="url" href="#">Dr. Jack Osborne</a><p>
+              <p class="adr">
+              <span class="street-address">HTML5 Hospital</span><br>
+              <span class="region">Doctorville</span><br>
+              <span class="postal-code">Postal Code</span><br>
+              <span class="country-name">Great Britain</span>
+              </p>
+              <p class="tel">+44 (0)XXXX XXXXXX</p>
+              </div>             
+        </div>
+        <div class="column is-5">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Text input">
+                  <span class="icon is-small is-left">
+                      <i class="fa fa-pencil"></i>
+                    </span>
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-warning"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+              </div>
+              
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control has-icons-left has-icons-right">
+                        <input class="input is-danger" type="text" placeholder="Asunto" value="¿de que se trata?">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-pencil"></i>
+                        </span>                        
+                      </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+              
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-text">Cancel</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div> 
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="is-size-2">footer</div>
-    </div>
-  </footer>
+  <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a href="http://jgthms.com"></a><strong>MoreClean</strong>Ditribuidora </a>Productos de Limpieza 
+            The website content is licensed to<a href="notengopaginaweb.com.ar">NTPW</a> 
+            <a href="https://bulma.io">
+              <img src="img/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>.           
+          </p>
+        </div>
+      </div>
+    </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="slick/slick.js"></script>
 </body>
 </html>

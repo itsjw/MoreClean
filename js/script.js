@@ -24,7 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 //oculta nav al hacer scroll
 $(document).ready(function (e) {
-  var scroll = 0
+
+  //slick
+  $('.slider').slick({
+    autoplay: true
+  });
+
+    var scroll = 0
   $(document).scroll(function (e) {    
     var scrollTop =$(this).scrollTop()
       if( scrollTop > scroll ){
@@ -39,6 +45,8 @@ $(document).ready(function (e) {
     //console.log(`scroll:${scroll}`)
     
   })
+
+
 })
 
 //cargado del menu desde el archivo menu.html
@@ -54,6 +62,7 @@ $(document).ready(function (e) {
 });*/
 
 //slider
+/*
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -80,5 +89,5 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
-
+*/
     

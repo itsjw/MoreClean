@@ -134,6 +134,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  background: url(../../../img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -6431,6 +6434,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-tabs .navbar-item {
     align-items: center;
     display: flex;
+    width: 175px;
+  }
+  html {
+    padding-top: 4.5rem !important;
   }
   .navbar-menu {
     background-color: white;
@@ -6438,9 +6445,6 @@ a.navbar-item:hover, a.navbar-item.is-active,
     padding: 0.5rem 0;
   }
   .navbar-menu.is-active {
-    display: block;
-  }
-  .navbar-burger {
     display: block;
   }
 }
@@ -9091,7 +9095,7 @@ label.panel-block:hover {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .section {
