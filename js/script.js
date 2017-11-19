@@ -30,7 +30,8 @@ $(document).ready(function (e) {
     autoplay: true
   });
 
-    var scroll = 0
+    var scroll = 116
+
   $(document).scroll(function (e) {    
     var scrollTop =$(this).scrollTop()
       if( scrollTop > scroll ){
@@ -46,9 +47,57 @@ $(document).ready(function (e) {
     
   })
 
+  $('.input').on('keyup', function () {
+    let valorMail = $('#input-email').val()
+    //console.log(`mail${valorMail}`)
+    let mailOK = caracteresCorreoValido(valorMail,)
+  });
+  
+  fetch("js/listaProductos.json", {
+    method:'get'}).then( response => response.json())
+      .then( response =>{      
+        console.log(response)
+        //console.log(lista.PromiseValue)
+        for (var key in response.listaProductos) {
+          var element = response.listaProductos[key];
+          renderProductos(element)
+          //$('div').append('TESTE');
+        }           
+      })
+      .catch( err =>{
+        console.log(err)
+      })    
+      
+    })
+    
+    function renderProductos (elemento){
+      console.log(elemento)
+      $('#productos').append(`<div class="prod">${elemento}</div>`); 
+      //$('#productos').append(elemento)
+    }
 
-})
 
+function caracteresCorreoValido(email, div){
+  console.log(email);
+  var email = email
+  var caract = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+
+  if (caract.test(email) == false){
+      $('#input-email').addClass('is-danger')
+      $('.help').show('slow')
+      $('.ico-danger-form-mail').show('slow')
+      console.log('false')
+      return false;
+  }else{
+    $('#input-email').removeClass('is-danger')
+    $('.help').hide('slow')
+    $('.ico-danger-form-mail').hide('slow')
+    console.log('true')
+    
+//        $(div).html('');
+      return true;
+  }
+}
 //cargado del menu desde el archivo menu.html
    /* $(document).ready(function () {
      $('.loadMenu').hide()
