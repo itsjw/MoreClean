@@ -11,5 +11,24 @@
         }
     ],
     "easysass.targetDir": "bulma/sass/css",
-    "cSpell.language": "es,es-ES"
+    "cSpell.language": "es,es-ES",
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "csharp",
+        "go",
+        "handlebars",
+        "html",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "plaintext",
+        "python",
+        "restructuredtext",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ]
 }

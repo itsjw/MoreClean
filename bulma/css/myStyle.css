@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
+@import url("../../font/flaticon.css");
 .main {
   background-color: white;
 }
@@ -24,98 +26,29 @@
 
 .pEnvios {
   /*the image used */
-  background-image: url("../../img/assets/bolsas.jpg");
+  background-image: url("../../img/assets/fondoCamionBN.jpg");
 }
 
 .pBolsas {
   /*the image used */
-  background-image: url("../../img/assets/fondoCamion.jpg");
+  background-image: url("../../img/assets/bolsasBN.jpg");
 }
 
 .pContacto {
   /*the image used */
-  background-image: url("https://d164vpkda9uyv1.cloudfront.net/web_upload/consumer/page_banner/contact_SP.jpg");
+  background-image: url("../../img/assets/contactoBN.jpg");
   height: 100px;
 }
 
 .boxTitleSecction {
-  color: white;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #63d0ff;
   text-align: center;
-  padding: 23px 0;
+  padding: 26px 0px;
 }
 
-.contSlider {
-  border-radius: 10px;
-}
-
-.mySlides {
-  margin: auto !important;
-  min-height: 100%px;
-}
-
-.w3-content {
-  max-width: 980px;
-  margin: auto;
-}
-
-*:before, *:after {
-  box-sizing: inherit;
-}
-
-.w3-tooltip, .w3-display-container {
-  position: relative;
-}
-
-.w3-display-bottommiddle {
-  position: absolute;
-  left: 50%;
-  bottom: -150px;
-  transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-}
-
-.w3-left, .w3-right, .w3-badge {
-  cursor: pointer !important;
-  color: black;
-}
-
-.w3-center {
-  text-align: center !important;
-}
-
-.w3-badge {
-  height: 9px;
-  width: 9px;
-  padding: 0;
-}
-
-.w3-badge, .w3-tag {
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-}
-
-.w3-white, .w3-hover-white:hover {
-  color: #000 !important;
-  background-color: #fff !important;
-}
-
-.w3-border {
-  border: 1px solid #ccc !important;
-}
-
-.w3-badge {
-  border-radius: 50%;
-}
-
-.w3-right {
-  float: right !important;
-  height: 100px;
-}
-
-.w3-left {
-  float: left !important;
+.boxEntregas > img {
+  box-shadow: -2px 2px 9px -4px black;
 }
 
 .bd-special-shadow {
@@ -175,6 +108,42 @@ html.has-navbar-fixed-top {
 
 .prod:hover {
   background-color: #c7adad;
+}
+
+.boxInfo {
+  transition: 0.5s;
+  box-shadow: 0 0 4px 0px black;
+  border-radius: 5px;
+  margin: 0 10px;
+  color: gray;
+  background-color: #eaf1f5;
+}
+
+.boxInfo:hover {
+  box-shadow: 0 0 14px 0px #808080;
+  color: #615f5f;
+}
+
+.headerBoxInfo .flaticon {
+  font-size: 5em;
+}
+
+.headerBoxInfo .flaticon:before {
+  font-size: 1em;
+}
+
+.headerBoxInfo .is-divider {
+  margin: 1rem 0;
+}
+
+.bodyBoxInfo {
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-size: 0.6em;
 }
  
 

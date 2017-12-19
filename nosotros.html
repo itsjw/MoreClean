@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" class="has-navbar-fixed-top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoreClean +</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+  <link rel="stylesheet" href="bulma/css/myStyle.css">  
+  <link rel="stylesheet" href="slick/slick.css">  
+  <link rel="stylesheet" href="slick/slick-theme.css">  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110595482-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110595482-1');
+</script>
+</head>
+<body >
+  <header>
+      <nav class="navbar is-fixed-top container" role="navigation" aria-label="main navigation">
+          <div id="specialShadow" class="bd-special-shadow" style="opacity: 1; transform: scaleY(1);"></div>
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="img/logo2.png" alt="More Clean Distribuidora de productos y maquinaria de limpieza">             
+            </a>                  
+            <div class="navbar-item is-size-3 has-text-info"></div>
+              <button class="button navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+          </div>
+          <div class="navbar-menu level-right" id="navMenu">
+              <!-- navbar start, navbar end -->
+              <a class="navbar-item" href="index.html" >Home</a>
+              <!--<a class="navbar-item" href="#">La Empresa</a> -->
+              <a class="navbar-item" href="productos.html">Productos</a> 
+              <a class="navbar-item" href="#">Contacto</a>     
+          </div>
+        </nav>  
+  </header>
+  
+  <section class="hero is-primary parallax pSlides">
+    <div class="hero-body">
+      <div id="sliderFrame">
+        <div class="slider container">
+            <img class="mySlides" src="img//banner/banner-mc.jpg">            
+            <img class="mySlides" src="img/banner/banner-marcas.jpg">
+            <img class="mySlides" src="img/banner/banner-t.jpg">            
+            <img class="mySlides" src="img/banner/banner-se.jpg">            
+            <img class="mySlides" src="img/banner/banner-ces.jpg">
+            <img class="mySlides" src="img/banner/banner-r.jpg">            
+            <img class="mySlides" src="img/banner/banner-envios.jpg">
+            <img class="mySlides" src="img/banner/banner-pap.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+         
+  <section class="section">
+    <div class="container">
+      <div class="content">
+          <div class="title">Quienes Somos</div>
+            <div class="is-divider" data-content="Nosotros"></div>          
+                <p>
+                  Somos distribuidores de insumos para limpieza e higiene integral. Tenemos una experiencia de más de <strong>12 años</strong> en este rubro que nos hace una empresa sólida y confiable.
+                  </p>
+                  <p>
+                     Operamos dentro de Buenos Aires con nuestros propios vehículos, y tenemos una logística que llega a todo el país, colocando a nuestra empresa en la distribuidora más confiable y efectiva.
+                </p>
+                <p>          
+                  Nuestra diferencia es la atención que brindamos a nuestros clientes y el asesoramiento continuo, con esto y la variedad de productos que tenemos disponibles, hace que <strong>More Clean</strong> sea una empresa que satisface las necesidades de cada cliente en particular.
+                </p>  
+      </div>  
+    </div>    
+  </section>
+
+<!--SECCION CONTACTO-->
+<div class="is-divider" data-content="Contactate con nosotros"></div>
+<div class="parallax pContacto is-center">
+    <div class="container">
+      <div class="boxTitleSecction title is-1">PEDÍ TU PRESUPUESTO</div>    
+    </div>
+  </div>
+  
+  <section class="section " id="contacto">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-right">            
+            <div class="vcard is-right">
+                <address class="author">
+                  <em class="fn"><a title="Posts by Jack Osborne" href="#">More Clean</a></em> 
+                      <br>
+                      distribuidora
+                    <div class="animated fadeIn" id="contact">
+                        <a href="#"><i class="fa fa-envelope-o"> </i> info@moreclean.com.ar</a><br>
+                        <a href="#"><i class="fa fa-phone"> </i>(011) 15-5009-4862 </a><br>
+                        <a href="#"><i class="fa fa-phone"> </i>(011) 6088-9274 </a><br>
+                    </div>
+                    <!--<street>cale altura barrio</street>-->
+                </address>             
+              </div>
+                  
+        </div>
+        <div class="column is-9" style="border-left: #969696 1px solid;">
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Text input">
+                  <span class="icon is-small is-left">
+                      <i class="fa fa-pencil"></i>
+                    </span>
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" id="input-email" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right ico-danger-form-mail">
+                    <i class="fa fa-warning"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+              </div>
+
+              <div class="field">
+                  <label class="label">Teléfono</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Teléfono input" value="(11) 1234-5678">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-phone"></i>
+                    </span>                    
+                </div>
+              
+              <div class="field">
+                <label class="label">Asunto</label>
+                <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" placeholder="Asunto" value="¿de que se trata?">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-pencil"></i>
+                        </span>                        
+                      </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Mensaje</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+              
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Enviar</button>
+                </div>
+                <div class="control">
+                  <button class="button is-text">Cancelar</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a href="http://jgthms.com"></a><strong>MoreClean</strong>Ditribuidora </a>Productos de Limpieza 
+            The website content is licensed to<a href="notengopaginaweb.com.ar">NTPW</a> 
+            <a href="https://bulma.io">
+              <img src="img/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>.           
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="slick/slick.js"></script>
+</body>
+</html>

@@ -27,7 +27,7 @@ $(document).ready(function (e) {
 
   //slick
   $('.slider').slick({
-    autoplay: true
+    autoplay: false
   });
 
     var scroll = 116
@@ -53,6 +53,7 @@ $(document).ready(function (e) {
     let mailOK = caracteresCorreoValido(valorMail,)
   });
   
+
   fetch("js/listaProductos.json", {
     method:'get'}).then( response => response.json())
       .then( response =>{      
@@ -71,7 +72,7 @@ $(document).ready(function (e) {
     })
     
     function renderProductos (elemento){
-      console.log(elemento)
+      //console.log(elemento)
       $('#productos').append(`<div class="prod">${elemento}</div>`); 
       //$('#productos').append(elemento)
     }
@@ -98,6 +99,9 @@ function caracteresCorreoValido(email, div){
       return true;
   }
 }
+
+
+
 //cargado del menu desde el archivo menu.html
    /* $(document).ready(function () {
      $('.loadMenu').hide()
